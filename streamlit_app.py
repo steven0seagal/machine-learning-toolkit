@@ -6,6 +6,7 @@ Main landing page of the application.
 """
 
 import streamlit as st
+from src.navigation import render_sidebar_navigation
 
 # Page configuration
 st.set_page_config(
@@ -14,6 +15,9 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded"
 )
+
+# Render sidebar navigation
+render_sidebar_navigation()
 
 # Main title
 st.title("🧬 Platforma Edukacyjna Uczenia Maszynowego w Bioinformatyce")

@@ -15,8 +15,12 @@ from pathlib import Path
 # Add src to path
 sys.path.append(str(Path(__file__).parent.parent))
 from src.plots import plot_decision_boundary_2d
+from src.navigation import render_sidebar_navigation
 
 st.set_page_config(page_title="SVM", page_icon="⚛️", layout="wide")
+
+# Render sidebar navigation
+render_sidebar_navigation()
 
 st.title("⚛️ Maszyny Wektorów Nośnych (SVM)")
 

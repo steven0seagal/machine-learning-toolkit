@@ -17,8 +17,12 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent))
 from src.data_loaders import load_gene_expression_cancer
 from src.plots import plot_pca_scree
+from src.navigation import render_sidebar_navigation
 
 st.set_page_config(page_title="PCA", page_icon="📐", layout="wide")
+
+# Render sidebar navigation
+render_sidebar_navigation()
 
 st.title("📐 Analiza Głównych Składowych (PCA)")
 

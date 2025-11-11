@@ -17,8 +17,12 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent))
 from src.data_loaders import load_breast_cancer_data
 from src.plots import plot_confusion_matrix
+from src.navigation import render_sidebar_navigation
 
 st.set_page_config(page_title="Drzewa Decyzyjne", page_icon="🌳", layout="wide")
+
+# Render sidebar navigation
+render_sidebar_navigation()
 
 st.title("🌳 Drzewa Decyzyjne (Decision Trees)")
 
