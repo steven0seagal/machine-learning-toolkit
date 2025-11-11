@@ -19,8 +19,12 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent))
 from src.data_loaders import load_breast_cancer_data
 from src.plots import plot_elbow_curve, plot_silhouette_scores
+from src.navigation import render_sidebar_navigation
 
 st.set_page_config(page_title="K-Means Clustering", page_icon="🎯", layout="wide")
+
+# Render sidebar navigation
+render_sidebar_navigation()
 
 st.title("🎯 Klastrowanie K-Means (K-Means Clustering)")
 

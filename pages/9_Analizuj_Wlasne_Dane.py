@@ -29,8 +29,12 @@ from sklearn.cluster import KMeans
 from sklearn.metrics import silhouette_score
 from sklearn.tree import DecisionTreeClassifier, DecisionTreeRegressor, plot_tree
 import matplotlib.pyplot as plt
+from src.navigation import render_sidebar_navigation
 
 st.set_page_config(page_title="Analizuj Własne Dane", page_icon="📂", layout="wide")
+
+# Render sidebar navigation
+render_sidebar_navigation()
 
 st.title("📂 Analizuj Własne Dane (BYOD)")
 
